@@ -5,3 +5,7 @@ rise
 jupyterthemes
 jupyter_contrib_nbextensions
 autopep8
+xgboost
+seaborn
+pandas
+scikit-plot
