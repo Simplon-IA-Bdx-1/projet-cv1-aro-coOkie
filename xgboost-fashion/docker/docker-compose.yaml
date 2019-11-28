@@ -1,0 +1,19 @@
+version: "3"
+services:
+  jupytR:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    container_name: jupytR2
+    image: jupytr
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: 50m
+    ports:
+      - "8888:8888"
+      - "6006:6006"
+    volumes:
+      - ../:/home/jovyan/work
+
